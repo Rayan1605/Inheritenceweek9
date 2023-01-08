@@ -1,4 +1,4 @@
-public class Book {
+public class Book extends Product{
     String author = "";
     private String description;
     private double price;
@@ -7,10 +7,10 @@ public class Book {
 
     }
     Book(String author,String description, double price, long code){
+        super(description,price,code);
+
         this.author = author;
-        this.description = description;
-        this.price = price;
-        this.code = code;
+
     }
 
     public String getAuthor() {
