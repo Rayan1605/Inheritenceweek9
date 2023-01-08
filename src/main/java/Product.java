@@ -4,7 +4,15 @@ public class Product {
     long code = 0;
 
 
+Product(){
 
+}
+Product(String description, double price, long code){
+    this.description = description;
+    this.price = price;
+    this.code = code;
+
+}
 
     public String getDescription() {
         return description;

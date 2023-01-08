@@ -1,16 +1,13 @@
-public class Book {
+public class Book extends Product{
     String author = "";
-    private String description;
-    private double price;
-    private long code;
     Book(){
 
     }
     Book(String author,String description, double price, long code){
+        super(description,price,code);
+
         this.author = author;
-        this.description = description;
-        this.price = price;
-        this.code = code;
+
     }
 
     public String getAuthor() {
@@ -19,29 +16,5 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public long getCode() {
-        return code;
-    }
-
-    public void setCode(long code) {
-        this.code = code;
     }
 }
